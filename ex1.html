@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap{
+            background-color:lightgray;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box{
+            width: 30%;
+            height: 400px;
+            background-color: salmon;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <script>
+        // const wrapEl = document.querySelector('.wrap')
+        // const dle = document.querySelector('.box:first-child')
+        // const p = document.createElement('p')
+        // const a = document.createElement('a')
+    
+
+
+        // a.innerHTML = "네이버"
+        // wrapEl.appendChild(p)
+        // p.appendChild(a)
+        // a.setAttribute('href', "http://www.naver.com/")
+        // wrapEl.removeChild(dle)
+        const wrapEl = document.querySelector('.wrap')
+        const pEl = document.createElement('p')
+        pEl.innerHTML = '<a href = "http://www.naver.com">네이버</a>'
+        wrapEl.appendChild(pEl)
+        wrapEl.removeChild(document.querySelector('.box:first-child'))
+        
+        
+        
+
+    </script>
+
+</body>
+</html>
